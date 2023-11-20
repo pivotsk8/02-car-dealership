@@ -11,7 +11,7 @@ export class BrandsService {
     {
       id: uuid(),
       name: 'Toyota',
-      createdAt: new Date().getTime()
+      createdAt: new Date().getTime(),
     }
   ]
 
@@ -50,9 +50,11 @@ export class BrandsService {
       }
       return brand
     })
+    return brandDB
   }
 
   remove(id: string) {
     this.brands = this.brands.filter(brand => brand.id !== id);
+    return this.brands
   }
 }

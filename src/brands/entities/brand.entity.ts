@@ -5,6 +5,6 @@ id:string;
 name:string;
 
 createdAt:number;
-uodatedAt?:number;
-  updatedAt: number;
+updatedAt?:number;
+
 }
